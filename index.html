@@ -7,8 +7,199 @@
     
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nav_header:'rgb(249, 247, 243);',
+            arrow: 'rgb(180, 244, 97);',
+            span_text: 'rgba(17, 17, 17, 0.7)',
+            heading_text: 'rgb(17, 17, 17)',
+            card_btn: 'rgba(17, 17, 17, 0.05)',
+            // primary: 'rgb(255,255,255)',
+            // primary_two: 'rgb(248,248,248)',
+            // secondary: 'rgb(30,30,30)',
+            // arrow: 'rgb(171, 239, 95)',
+            // p_color: 'rgb(73, 73, 73)',
+            // h1_color: 'rgb(33, 33, 33)',
+            // v_color: 'rgba(171, 239, 95, 0.5)',
+            // arrowbg_color:'rgb(171, 239, 95)',
+            // we_bg:'rgb(235,234,234)',
+            // first_pink:'rgb(231, 193, 211)',
+            // second_yellow:'rgb(239, 218, 110)',
+            // third_paste:'rgb(164, 218, 195)',
+            // fourth_blue:'rgb(119, 170, 234)',
+            // footer_r:'rgb(28, 28, 28)',
+            // footer_p:'rgb(115, 115, 115)',
+            // footer_a:'rgb(233, 233,233)',
+            // explore_color:'rgba(171, 239, 95, 0.2)',
+            // clifford: '#da373d',
+          },
+          fontFamily: {
+            Inter: 'Inter', 
+          },
+          backgroundImage: {
+            page:"url('./assets/bg.jpg')",
+          },
+        },
+      },
+    }
+  </script>
 </head>
-<body>
-    
+<body class="font-Inter">
+   <main>
+    <!-- Navbar Section Starts -->
+        <nav class="h-28 bg-nav_header">
+            <section class="bg-nav_header">
+                <div class="navbar bg-base-100 w-10/12 mx-auto bg-nav_header pt-4">
+                    <div class="navbar-start">
+                        <a class="btn  bg-arrow">Blog</a>
+                      </div>
+                    <div class="navbar-center hidden  lg:flex gap-2">
+                     <div>
+                        <img src="./assets/logo.png" alt="">
+                     </div>
+                     <div>
+                        <h2 class="font-extrabold text-xl">Donate Bangladesh</h2>
+                     </div>
+                    </div>
+                    <div class="navbar-end flex gap-1">
+                      <div>
+                        <img src="./assets/coin.png" alt="">
+                      </div>
+                      <div>
+                        <span id="my-balance" class="text-span_text font-bold">5500</span>
+                        <span class="text-span_text font-bold">BDT</span>
+
+                      </div>
+                    </div>
+                  </div>
+                </section>
+           
+        </nav>
+        <!-- Navbar Section Ends -->
+
+         <!-- Donation and History Button Section Starts -->
+          <section class="">
+            <div class="flex justify-center items-center h-28 w-10/12 mx-auto  gap-5">
+                <button class="btn px-5 bg-arrow">Donation</button>
+                <button class="btn px-5">History</button>
+            </div>
+            <hr>
+          </section>
+         <!-- Donation and History Button Section Ends -->
+
+         <!-- Cards Section Starts -->
+          <section>
+            <div class=" w-10/12 mx-auto hero mt-5 mb-10">
+                <div class="hero-content flex-col lg:flex-row gap-10 border-2">
+                    <div class="w-1/2">
+                        <img class="w-full" src="./assets/noakhali.png" alt="">
+                    </div>
+                  
+                  <div class="border-2 w-1/2 h-[380px] flex flex-col">
+                    <div>
+                      <button class="flex gap-2 bg-card_btn p-2 border rounded-lg">
+                        <div>
+                            <img class="h-6" src="/assets/coin.png" alt="">
+                        </div>
+                        <div>
+                            <span id="total-1">0</span>
+                            <span>BDT</span>
+                        </div>
+                    </button>
+                    </div>
+                   <div>
+                    <h3 class="font-bold text-heading_text">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p class="py-6 text-sm text-span_text">
+                        The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+                    </p>
+                    <input id="input-1" class="p-3 w-full border" type="text" placeholder="Write amount here">
+                   </div>
+                    
+                    <br>
+                    <div class="flex justify-end mt-[20px]">
+                      <button id="btn-noakhali-donate" class="p-3 border rounded-xl bg-arrow mt-5 w-full text-black font-bold">Donate NOW</button>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            <div class=" w-10/12 mx-auto hero mb-10">
+                <div class="hero-content flex-col lg:flex-row gap-10 border-2">
+                    <div class="w-1/2">
+                        <img class="w-full" src="./assets/feni.png" alt="">
+                    </div>
+                  
+                  <div class="border-2 w-1/2 h-[380px] flex flex-col">
+                    <div>
+                      <button class="flex gap-2 bg-card_btn p-2 border rounded-lg">
+                        <div>
+                            <img class="h-6" src="/assets/coin.png" alt="">
+                        </div>
+                        <div>
+                            <span id="total-2">0</span>
+                            <span>BDT</span>
+                        </div>
+                    </button>
+                    </div>
+                   <div>
+                    <h3 class="font-bold text-heading_text">Aid for Injured in the Quota Movement</h3>
+                    <p class="py-6 text-sm text-span_text">
+                      The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                    </p>
+                    <input id="input-2" class="p-3 w-full border" type="text" placeholder="Write amount here">
+                   </div>
+                    
+                    <br>
+                    <div class="flex justify-end mt-[20px]">
+                      <button id="btn-feni-donate" class="p-3 border rounded-xl bg-arrow  w-full text-black font-bold">Donate NOW</button>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            <div class=" w-10/12 mx-auto hero mb-10">
+                <div class="hero-content flex-col lg:flex-row gap-10 border-2">
+                    <div class="w-1/2">
+                        <img class="w-full" src="./assets/quota-protest.png" alt="">
+                    </div>
+                  
+                  <div class="border-2 w-1/2 h-[380px] flex flex-col">
+                    <div>
+                      <button class="flex gap-2 bg-card_btn p-2 border rounded-lg">
+                        <div>
+                            <img class="h-6" src="/assets/coin.png" alt="">
+                        </div>
+                        <div>
+                            <span id="total-3">0</span>
+                            <span>BDT</span>
+                        </div>
+                    </button>
+                    </div>
+                   <div>
+                    <h3 class="font-bold text-heading_text">Aid for Injured in the Quota Movement</h3>
+                    <p class="py-6 text-sm text-span_text">
+                      The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                    </p>
+                    <input id="input-3" class="p-3 w-full border" type="text" placeholder="Write amount here">
+                   </div>
+                    
+                    <br>
+                    <div class="flex justify-end mt-[20px]">
+                      <button id="btn-protest-donate" class="p-3 border rounded-xl bg-arrow mt-5 w-full text-black font-bold">Donate NOW</button>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+          </section>
+         <!-- Cards Section Ends -->
+
+   </main>
+   <script src="/js/commonfunc.js"></script> 
+   <script src="/js/money.js"></script>
+   
 </body>
 </html>
