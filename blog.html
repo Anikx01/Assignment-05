@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script
+      src="https://kit.fontawesome.com/23363442c6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              nav_header: "rgb(249, 247, 243);",
+              arrow: "rgb(180, 244, 97);",
+              span_text: "rgba(17, 17, 17, 0.7)",
+              heading_text: "rgb(17, 17, 17)",
+              card_btn: "rgba(17, 17, 17, 0.05)",
+            },
+            fontFamily: {
+              Inter: "Inter",
+            },
+            backgroundImage: {
+              page: "url('./assets/bg.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-Inter">
+    <main>
+      <nav class="h-28 bg-nav_header">
+        <section class="bg-nav_header">
+          <div class="navbar bg-base-100 w-10/12 mx-auto bg-nav_header pt-4">
+            <div class="navbar-start">
+              <a id="btn-home" href="index.html" class="btn bg-arrow">Home</a>
+            </div>
+            <div class="navbar-center hidden lg:flex gap-2">
+              <div>
+                <img src="./assets/logo.png" alt="" />
+              </div>
+              <div>
+                <h2 class="font-extrabold text-xl">Donate Bangladesh</h2>
+              </div>
+            </div>
+            <div class="navbar-end flex gap-1">
+              <div>
+                <img src="./assets/coin.png" alt="" />
+              </div>
+              <div>
+                <span id="my-balance" class="text-span_text font-bold"
+                  >5500</span
+                >
+                <span class="text-span_text font-bold">BDT</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </nav>
+
+      <section>
+        <div
+          class="w-10/12 mx-auto flex border-2 border-red-500 items-center gap-3 mt-5 mb-8"
+        >
+          <h1 class="fontsi font-extrabold text-2xl">Important FAQ</h1>
+          <img class="h-10 w-10" src="./assets/question-mark.png" alt="" />
+        </div>
+      </section>
+
+      <section class="">
+        <div class="w-10/12 mx-auto border-2 border-green-600">
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-extrabold">
+              What is the Document Object Model(DOM)?
+            </div>
+            <div class="collapse-content">
+              <p>
+                The Document Object Model (DOM) is a programming interface for
+                web documents. It represents the structure of a web page in a
+                way that programs (like JavaScript) can interact with,
+                manipulate, and update the content, structure, and styling of
+                the page. In essence, the DOM allows scripts to dynamically
+                change the content, structure, and styling of a webpage while it
+                is loaded.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold">
+              How do you select an element from the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To select an element from the DOM (Document Object Model) using
+                JavaScript, you can use several methods provided by the document
+                object. These methods allow you to interact with different
+                elements in the DOM based on their ID, class, tag, or other
+                attributes.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold">
+              What is event delegation in the context of the DOM,and why it is
+              useful?
+            </div>
+            <div class="collapse-content">
+              <p>
+                Event delegation is a technique in the DOM where a single event
+                listener is added to a parent element instead of individual
+                child elements. This allows the parent to listen for events
+                triggered by its child elements. By taking advantage of event
+                bubbling (where an event triggered on a child element propagates
+                up to its parent elements), you can handle events more
+                efficiently.
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-extrabold">
+              How do you manipulate and element's attributes and styles using
+              the DOM?
+            </div>
+            <div class="collapse-content">
+              <p>
+                To manipulate an element's attributes and styles using the DOM,
+                you can use several methods. For attributes, getAttribute()
+                retrieves an attribute's value, setAttribute() allows you to add
+                or modify an attribute, and removeAttribute() removes it. For
+                instance, you can get the src of an image, change it, or remove
+                an attribute like alt. When it comes to styles, you can directly
+                modify inline styles by accessing the style property of an
+                element, such as changing the background color or width. To
+                access styles applied via CSS, the getComputedStyle() method
+                retrieves the computed values. Additionally, manipulating an
+                element’s classes is a flexible way to control its appearance.
+                The classList.add() method adds a class, while
+                classList.remove() removes it, and classList.toggle() switches a
+                class on or off based on its current state. These DOM
+                manipulation techniques provide a powerful way to dynamically
+                control the look and behavior of elements on a webpage.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="/js/commonfunc.js"></script>
+      <script src="/js/money.js"></script>
+      <script src="/js/raw.js"></script>
+  </body>
+</html>

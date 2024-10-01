@@ -1,28 +1,5 @@
 
 
-// function donate(btnttn,total,input){
-
-//     document.getElementById(btnttn).addEventListener('click',function(event){
-
-//         event.preventDefault();
-    
-//         const totaldonation=parseFloat(document.getElementById(total).innerText);
-    
-//         const inputone=parseFloat(document.getElementById(input).value);
-        
-//         const mybalance=parseFloat(document.getElementById("my-balance").innerText)-inputone;
-    
-//         const newbalance=totaldonation+inputone;
-    
-//         document.getElementById("total").innerText=newbalance;
-    
-//         document.getElementById("my-balance").innerText=mybalance;
-    
-//     });
-
-// }
-
-
 function donate(btnttn, total, input) {
     document.getElementById(btnttn).addEventListener('click', function(event) {
         event.preventDefault();
@@ -44,4 +21,27 @@ function donate(btnttn, total, input) {
         document.getElementById("my-balance").innerText = updatedBalance;
     });
 }
+
+function clkgreen(btngreen,btngray){
+    document.getElementById(btngreen).addEventListener('click',function(event){
+
+        document.getElementById(btngreen).classList.add('bg-arrow');
+        
+        document.getElementById(btngray).classList.remove('bg-arrow');
+
+    
+    })
+}
+
+function clkgray(btngray,btngreen){
+    document.getElementById(btngray).addEventListener('click',function(event){
+
+        document.getElementById(btngray).classList.add('bg-arrow');
+        
+        document.getElementById(btngreen).classList.remove('bg-arrow');
+
+    
+    })
+}
+
 
