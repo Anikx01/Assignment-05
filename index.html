@@ -109,7 +109,9 @@
       <!-- Donation and History Button Section Ends -->
 
       <!-- Cards Section Starts -->
-      <section>
+
+      <!-- Donation Button part Start-->
+      <section id="donation-button-page">
         <div class="w-10/12 mx-auto hero mt-5 mb-10">
           <div class="hero-content flex-col lg:flex-row gap-10 border-2">
             <div class="w-1/2">
@@ -129,7 +131,7 @@
                 </button>
               </div>
               <div>
-                <h3 class="font-bold text-heading_text">
+                <h3 id="title-1" class="font-bold text-heading_text">
                   Donate for Flood at Noakhali, Bangladesh
                 </h3>
                 <p class="py-6 text-sm text-span_text">
@@ -150,12 +152,26 @@
 
               <br />
               <div class="flex justify-end mt-[20px]">
-                <button
-                  id="btn-noakhali-donate"
-                  class="p-3 border rounded-xl bg-arrow mt-5 w-full text-black font-bold"
-                >
-                  Donate NOW
-                </button>
+                <button onclick="my_modal_1.showModal()" id="btn-noakhali-donate"
+                                class="btn min-w-full bg-arrow">Donate Now</button>
+              
+                            <dialog id="my_modal_1" class="modal">
+                                <div class="modal-box">
+                                    <h1 class="text-2xl font-bold text-center">Congrates</h1>
+                                    <div class="flex justify-center mt-2">
+                                        <img src="assets/coin.png" alt="">
+                                    </div>
+                                    <p class="py-4 text-center">You Have Donated for Humankind</p>
+                                    <h2 class="text-xl font-bold text-center">Successfully</h2>
+                                    <div class="modal-action">
+                                        <div class="flex justify-center">
+                                            <form method="dialog">
+                                              
+                                                <button class="btn w-full">close confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                            </dialog>
               </div>
             </div>
           </div>
@@ -179,7 +195,7 @@
                 </button>
               </div>
               <div>
-                <h3 class="font-bold text-heading_text">
+                <h3 id="title-2" class="font-bold text-heading_text">
                   Aid for Injured in the Quota Movement
                 </h3>
                 <p class="py-6 text-sm text-span_text">
@@ -203,12 +219,26 @@
 
               <br />
               <div class="flex justify-end mt-[20px]">
-                <button
-                  id="btn-feni-donate"
-                  class="p-3 border rounded-xl bg-arrow w-full text-black font-bold"
-                >
-                  Donate NOW
-                </button>
+                <button onclick="my_modal_2.showModal()" id="btn-feni-donate"
+                                class="btn min-w-full bg-arrow">Donate Now</button>
+              
+                            <dialog id="my_modal_2" class="modal">
+                                <div class="modal-box">
+                                    <h1 class="text-2xl font-bold text-center">Congrates</h1>
+                                    <div class="flex justify-center mt-2">
+                                        <img src="assets/coin.png" alt="">
+                                    </div>
+                                    <p class="py-4 text-center">You Have Donated for Humankind</p>
+                                    <h2 class="text-xl font-bold text-center">Successfully</h2>
+                                    <div class="modal-action">
+                                        <div class="flex justify-center">
+                                            <form method="dialog">
+                                              
+                                                <button class="btn w-full">close confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                            </dialog>
               </div>
             </div>
           </div>
@@ -232,7 +262,7 @@
                 </button>
               </div>
               <div>
-                <h3 class="font-bold text-heading_text">
+                <h3 id="title-3" class="font-bold text-heading_text">
                   Aid for Injured in the Quota Movement
                 </h3>
                 <p class="py-6 text-sm text-span_text">
@@ -256,17 +286,39 @@
 
               <br />
               <div class="flex justify-end mt-[20px]">
-                <button
-                  id="btn-protest-donate"
-                  class="p-3 border rounded-xl bg-arrow mt-5 w-full text-black font-bold"
-                >
-                  Donate NOW
-                </button>
+                <button onclick="my_modal_3.showModal()" id="btn-protest-donate"
+                                class="btn min-w-full bg-arrow">Donate Now</button>
+              
+                            <dialog id="my_modal_3" class="modal">
+                                <div class="modal-box">
+                                    <h1 class="text-2xl font-bold text-center">Congrates</h1>
+                                    <div class="flex justify-center mt-2">
+                                        <img src="assets/coin.png" alt="">
+                                    </div>
+                                    <p class="py-4 text-center">You Have Donated for Humankind</p>
+                                    <h2 class="text-xl font-bold text-center">Successfully</h2>
+                                    <div class="modal-action">
+                                        <div class="flex justify-center">
+                                            <form method="dialog">
+                                               
+                                                <button class="btn w-full">close confirmation</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                            </dialog>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Donation Button part End -->
+
+      <!-- History Button part Start-->
+      <section id="history-button-page" class="">
+        <div id="history-div"></div>
+      </section>
+      <!-- History Button part End -->
       <!-- Cards Section Ends -->
     </main>
     <script src="./js/commonfunc.js"></script>
